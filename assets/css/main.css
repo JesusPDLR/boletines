@@ -1,0 +1,149 @@
+html{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+  background: #fc00ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc00ff, #00dbde); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  max-width: 960px;
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  position: relative;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+.content{
+  padding: 1em;
+}
+td{
+display: block;
+width: 100%;
+}
+td:nth-of-type(1){
+font-size: 1.5em;
+font-weight: bold;
+color: #000000;
+}
+
+th{
+  display: none;
+}
+
+.actions{
+  position:absolute;
+  top: 1em;
+  right: 1em;
+
+}
+.cerrar{
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 60%;
+  background-color: #8650D3 ;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* td{ border:solid 1px;} ponerle borde al cuadro*/
+a{
+  text-decoration: none;
+  color: red;
+}
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 200;
+}
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+.table tr:nth-child(even){
+  background-color:  #9c9c9c;
+}
+.fa-star{
+  color: yellow;
+}
+.title-item{
+  border-bottom: solid 2px #C6426E;
+  padding-bottom:1em;
+  padding-top: 2em;
+}
+.position{
+  background-color: #C6426E;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-right: 0.5em;
+  /*border-top-right-radius: 2em; redondear bordes
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;*/
+}
+a:hover{
+  opacity: 0.8;
+}
+a:active{
+  background: blue;
+}
+.address{
+  font-weight: bold;
+  color: #642B73;
+  font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+img{
+  max-width: 100%;
+}
+.main-image{
+  float: left;
+  margin-right: 1em;
+  height:   250px;
+}
+
+
+@media (min-width: 900px) {
+th{
+    display: table-cell;
+  }
+td{
+    width: auto;
+    display: table-cell;
+  }
+td:nth-of-type(1){
+    font-size: 1em;
+  }
+.content{
+  padding: 1.8em;
+  }
+}
+@media (min-height:550px) {
+  .content{
+    height: 500px;
+  }
+}
